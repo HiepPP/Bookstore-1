@@ -1,2 +1,2 @@
 # bookstore
-A simple bookstore using Ruby on Rails
+A simple bookstore using Ruby on Rails and Bootstrap
