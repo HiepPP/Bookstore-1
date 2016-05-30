@@ -38,6 +38,10 @@
  	padding-top: 20px;
  }
 
+ .open .dropdown-menu{
+ 	display: block;
+ }
+
  #books-index{
  	text-align: center;
  }
@@ -56,7 +60,7 @@
  	display: block;
  	margin-top: 20px;
  }
- 
+
  #books-show h2{
  	background:#f4f4f4;
  	padding:10px;
@@ -64,12 +68,16 @@
 
  .books-show-left{
  	float:left;
- 	width:40%;
+ 	width:45%;
+ }
+ 
+ .books-show-left img{
+ 	max-width: 300px;
  }
 
  .books-show-right{
- 	float:left;
- 	width:60%;
+ 	float:right;
+ 	width:55%;
  	margin-top:10px;
  }
 
