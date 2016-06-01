@@ -15,12 +15,27 @@ class CatagoriesController < ApplicationController
   end
 
   def update
+    @catagory = Catagory.find(params[:id])
+
+    @catagory.update(catagory_params)
+
+    flash[:notice] = 'Category Updated'
+
+    redirect_to catagories_path
   end
 
   def edit
+    @catagory = Catagory.find(params[:id])
   end
 
   def destroy
+    @catagory = Catagory.find(params[:id])
+
+    @catagory.destroy
+
+    flash[:notice] = 'Category Removed'
+
+    redirect_to catagories_path
   end
 
   def index
